@@ -37,6 +37,7 @@ model2=GridSearchCV(svm.SVC(),tuned_params)
 model2.fit(features,y_train)
 
 print(model2.best_params_)
+print(hello shantnu)
 
 features_test=cv.transform(x_test)
 print('New Accuracy is: ',model2.score(features_test,y_test))
